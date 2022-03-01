@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/style.css" type="text/css" rel="stylesheet">
+    <title>Map</title>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</head>
+
+<body>
+    <div class="box map">
+        <iframe src="https://maps.google.com/maps?q=<%=latitude%>, <%=longitude%>&z=15&output=embed" width="1000"
+            height="500" frameborder="0" style="border:0"></iframe>
+        </iframe>
+        <input type="button" onclick="goBack()" value="Back" />
+    </div>
+</body>
+
+</html>

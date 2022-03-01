@@ -1,0 +1,26 @@
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/css/style.css" type="text/css" rel="stylesheet">
+	<title>Upload Photo</title>
+</head>
+
+<body>
+
+	<div class="box">
+		<h1>Upload a Photo</h1>
+		<form action="result" method='POST' enctype="multipart/form-data">
+			<h3>Title : </h3>
+			<input type='text' name='title' /><br />
+			<h3>Description : </h3>
+			<input type='text' name='description' /><br />
+			<h3>Photo : </h3>
+			<input type='file' name='photo' required /><br />
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+
+</body>
+
+</html>
